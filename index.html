@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/15ce965300.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet"> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-color">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_blank">
+                <img src="/assets/img/logo2.png" alt="logo argentina programa" class="w-25">
+            </a>
+            <!--boton abre login-->
+            <ul class="list-group list-group-horizontal">
+                <li class="list-group-item"> 
+               <i data-bs-toggle="modal" type="button" data-bs-target="#loginModal"
+                    class="fa-solid fa-lock text-black"></i> </li>
+                    <li class="list-group-item">
+                     <i data-bs-toggle="modal" type="button" data-bs-target="#loginModal"
+                    class="fa-solid fa-lock-open text-black"></i> </li>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- el login-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio sesion</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+
+                <!--formulario modal-->
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email </label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">contraseña</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">ingresar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="assets/img/foto perfil.jpg" alt="">
+            </div>
+            <h1>JOSE ROJO</h1>
+            <h2>comerciante-estudiante #YoProgramo 4ta edición </h2>
+            <div class="redes">
+                <a href="https://www.facebook.com/josemaria.rojo.169/" target="_blank"><i class="fa-brands fa-facebook text-black"></i></a></li>
+                <a href="https://github.com/joserojo2022" target="_blank"> <i class="fa-brands fa-github text-black"></i></a></li>
+                <a href="https://www.linkedin.com/in/jose-maria-rojo-745b97194/" target="_blank"><i class="fa-brands fa-linkedin text-black"></i></a></li>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, mi nombre es Jose Maria Rojo.</span> Tengo 37 años , soy casado y tengo dos hijos. Actualmente trabajo de forma independiente y realizo el curso de  #YoProgramo 4ta edición para ser un Full Stack Jr. </p>
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>fecha de nacimiento</strong>
+                            11/febrero/1985
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3888402868
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            josemariarojo32@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                        Av San Luis 585, san pedro de jujuy
+                        </li>
+                        <li>
+                            <strong>empleo</strong>
+                            <span>INDEPENDIENTE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad text-black"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking text-black"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-house text-black"></i>
+                            <span>HOGAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-children text-black"></i>
+                            <span>FAMILIA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car text-black"></i>
+                            <span>AUTOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera text-black"></i>
+                            <span>FOTOS</span>
+                        </div>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CURRICULUM -->
+     <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    <div class="item izq">
+                        <h4>profesorado de educacion fisica</h4>
+                        <span class="casa">Universidad Nacional de Tucuman</span>
+                        <span class="fecha">2002 - 2005</span>
+                        <p>carrera sin completar</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>tecnico azucarero</h4>
+                        <span class="casa">Universidad Nacional de Tucuman</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>carrera sin completar</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Curso de Desarrollo Web con HTML, CSS y JavaScript | Básico</h4>
+                        <span class="casa">IITA (Jujuy)</span>
+                        <span class="fecha">2020</span>
+                        <p>curso basico orientado al desarrollo web duracion tres meses </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>#YoProgramo 4ta edición</h4>
+                        <span class="casa">INTI</span>
+                        <span class="fecha">2022</span>
+                        <p>desarrollador web full stack junior </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Obrero</h4>
+                        <span class="casa">Ingenio La Fronterita</span>
+                        <span class="fecha">2007 - 2011</span>
+                        <p>ingenio de la industria azucarera ubicado en la ciudad de Famailla (Tucuman)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>comerciante</h4>
+                        <span class="casa">Repuestera el Ramal</span>
+                        <span class="fecha">2011 - 2018</span>
+                        <p>negocio familiar dedicado a la venta de repuestos del automotor San Pedro de Jujuy (Jujuy) </p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Cajero</h4>
+                        <span class="casa">Diablo Pub</span>
+                        <span class="fecha">2018 - 2020</span>
+                        <p>club bailable desempeñando tareas de cajero y atencion al cliente San Pedro de Jujuy (Jujuy)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>comerciante</h4>
+                        <span class="casa">Lavadero el Ramal</span>
+                        <span class="fecha">2019-2023</span>
+                        <p>empresa familiar dedicada al lavado automotor San Pedro de Jujuy (Jujuy)</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- SECCION CONTACTO -->
+     <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Asunto">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="assets/img/mi ubicacion.png" alt="">
+                    <div class="info"> 
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                AV San Luis 585 San Pedro de Jujuy
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-whatsapp"></i>
+                                3888-402868
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                josemariarojo32@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     
+
+    <footer>
+        <div class="cantainer">
+            <p>&copy;2022 #Jose Maria Rojo</p>
+        </div>
+    </footer>
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+
+         <script>
+          AOS.init();
+        </script>
+        <script src="script.js"></script>
+</body>
+
+</html>
